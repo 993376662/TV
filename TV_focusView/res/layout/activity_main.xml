@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testjd.MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <com.example.testjd.MyLayout
+                android:id="@+id/aa"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_blue_light"
+                android:orientation="horizontal" />
+
+            <com.example.testjd.MyLayout
+                android:id="@+id/bb"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_below="@id/aa"
+                android:background="@android:color/holo_purple"
+                android:orientation="horizontal" />
+
+            <com.example.testjd.MyLayout
+                android:id="@+id/cc"
+                android:layout_width="230dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/bb"
+                android:background="@android:color/holo_red_dark" >
+            </com.example.testjd.MyLayout>
+
+            <com.example.testjd.MyLayout
+                android:id="@+id/dd"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/cc"
+                android:background="@android:color/holo_orange_light" >
+            </com.example.testjd.MyLayout>
+
+            <com.example.testjd.MyLayout
+                android:id="@+id/ee"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/dd"
+                android:background="@android:color/holo_green_light" >
+            </com.example.testjd.MyLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
